@@ -1,0 +1,149 @@
+/* General Container Styling */
+.expense-input-container {
+    max-width: 900px; /* Increased max-width for wider layout */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expense-input-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 100%; /* Set to full width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Styling */
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.expense-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.expense-form input,
+.expense-form select {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%; /* Full width for inputs */
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.expense-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.expense-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Expenses List Styling */
+.expense-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expense-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.expense-list .list-group-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+.expense-list .btn-warning {
+    background-color: #17a2b8; /* Changed to teal for Edit */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expense-list .btn-warning:hover {
+    background-color: #138496; /* Darker teal on hover */
+}
+
+.expense-list .btn-danger {
+    background-color: #e3342f; /* Changed to red with higher contrast */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expense-list .btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .expense-form input,
+    .expense-form select,
+    .expense-form button {
+        font-size: 1rem;
+    }
+
+    .expense-list .btn-warning,
+    .expense-list .btn-danger {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+}

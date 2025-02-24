@@ -1,0 +1,133 @@
+/* General Dashboard Styling */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color for the dashboard */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around cards */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add hover animation */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333; /* Darker color for better readability */
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555; /* Softer text color for secondary information */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+    padding: 12px 10px; /* Increased padding for better spacing */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalized column headers */
+}
+
+.table tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Subtle hover effect */
+}
+
+/* Progress Bar Styling */
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e9ecef; /* Light gray for progress background */
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.4s ease-in-out; /* Smooth animation for progress changes */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .dashboard-title {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

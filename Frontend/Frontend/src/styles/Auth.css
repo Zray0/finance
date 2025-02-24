@@ -1,0 +1,82 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(108, 117, 125, 0.1)),
+                url('../images/finance-background.jpg') no-repeat center center/cover;
+}
+
+.auth-card {
+    background: white; /* White background for the box */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for the box */
+    border: 1px solid var(--secondary-color); /* Subtle border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Form Styling */
+form {
+    background: transparent; /* Transparent inside the card */
+    border: none;
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Input Styling */
+.form-control {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: none;
+    transition: border-color 0.3s;
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Link Styling */
+.auth-switch {
+    margin-top: 15px;
+}
+
+.auth-switch a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}

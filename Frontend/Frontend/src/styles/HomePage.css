@@ -1,0 +1,85 @@
+/* Container */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Financial Overview Section */
+.financial-overview {
+    margin-bottom: 40px;
+}
+
+.overview-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Recent Transactions Section */
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transactions-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.transactions-table th, .transactions-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transactions-table tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Predicted Expense */
+.predicted-expense {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.predicted-card {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
